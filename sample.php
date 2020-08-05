@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <?php
     $result = '無し';
+    if (array_key_exists('act', $_POST)){
+        $result = omikuji();
+    }
+    
+    function omikuji(){
+        $fortune = ['大吉', "吉", "中吉", "小吉", "末吉", "凶" ]
+    }
 ?>
 <html lang="ja">
     <head>
